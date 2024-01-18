@@ -1,4 +1,4 @@
-package com.yassin.labxpert.enums;
+package com.yassin.labxpert.entiys.enums;
 
 public enum EtatProgressionEchantillon {
     PENDING,

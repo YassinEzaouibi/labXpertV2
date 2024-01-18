@@ -1,7 +1,10 @@
 package com.yassin.labxpert.repository;
 
-import com.yassin.labxpert.entitys.User;
+import com.yassin.labxpert.entiys.Users;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface UserRepo extends JpaRepository<User, Long> {
+import java.util.Optional;
+
+public interface UserRepo extends JpaRepository<Users, Long> {
+    Optional<Users> findByEmail(String email);
 }
